@@ -7,14 +7,6 @@ def compared(dictionary: dict, keyword: str):
         if k.startswith(keyword):
             print(f"{k} : {v}")
 
-def results(dict1:dict,dict2:dict):
-    new_dict = {}
-    one_dict = {}
-    for (k1, v1), (k2, v2) in zip(dict1.items(), dict2.items()):
-        new_dict[k1[:4]] = k1[4:] + str(v1)
-        one_dict[k2[:4]] = k2[4:] + str(v2)
-    for (kk, vv), (kk1, vv1) in zip(new_dict.items(), one_dict.items()):
-        print(f"{kk} : {vv}")
 
 
 df = pd.read_excel("ujass.xlsx")
