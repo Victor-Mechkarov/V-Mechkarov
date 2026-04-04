@@ -26,7 +26,6 @@ for row in X:
 dictionary_2025 = dict(zip(rows_list, values))
 
 df = pd.read_excel("edited.xlsx")
-#df = pd.read_excel("ed_27.xlsx")
 data_dict = df.to_numpy()
 mapper_data = {}
 index_1 = []
@@ -142,7 +141,7 @@ while True:
             "Ако кандидатствате за профилирана гимназия с доп. НВО изберте '1' ако не '0"
         )
 
-        additional = int(input("Въведи:  "))
+        additional = int(input("Въведи 0 / 1:  "))
 
         if additional == 1:
             special_exams = True
