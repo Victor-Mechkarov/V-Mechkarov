@@ -2,3 +2,6 @@
 venv/Jupyter_Project_Files/
 _pycache_/Jupyter_Project_Files/
 *.pyc/Jupyter_Project_Files/
+.idea
+main.py
+
